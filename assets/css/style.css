@@ -78,8 +78,11 @@ footer {
 .socials {
   display: flex;
   gap: 2rem;
-  color: white;
-  font-size: 2rem;
+}
+
+.socials a {
+    color: white;
+    font-size: 2rem;
 }
 
 footer p {
