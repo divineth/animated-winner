@@ -39,9 +39,15 @@ img {
   min-width: 300px;
 }
 
-.buttons {
+/* .buttons {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+} */
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -54,6 +60,9 @@ a:visited {
 }
 
 .buttons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: transparent;
   padding: 1rem 2rem;
@@ -92,8 +101,8 @@ footer p {
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .buttons {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
   }
 }
